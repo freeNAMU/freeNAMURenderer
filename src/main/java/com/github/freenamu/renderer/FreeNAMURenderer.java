@@ -39,9 +39,9 @@ public class FreeNAMURenderer {
     }
 
     private void renderAnchor(StringBuilder result, Anchor anchor) {
-        result.append("<a href=\"/document/");
+        result.append("<a href=\"/document/view/");
         result.append(anchor.getReference());
-        result.append("/latest\">");
+        result.append("\">");
         result.append(render(anchor.getChildren()));
         result.append("</a>");
     }
