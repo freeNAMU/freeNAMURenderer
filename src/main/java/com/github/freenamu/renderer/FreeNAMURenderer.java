@@ -74,7 +74,7 @@ public class FreeNAMURenderer {
         result.append(String.format("<h%1$d>", paragraph.getLevel()));
         result.append(paragraphAnchorGenerator.getNextAnchor(paragraph.getLevel()));
         result.append(" ");
-        result.append(paragraph.getTitle());
+        result.append(render(paragraph.getTitle()));
         result.append(String.format("</h%1$d>", paragraph.getLevel()));
         result.append("<p>");
         result.append(render(paragraph.getChildren()));
